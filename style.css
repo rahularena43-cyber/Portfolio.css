@@ -1,0 +1,204 @@
+/* Basic CSS for Rahul's student portfolio */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263445;
+    line-height: 1.6;
+}
+
+/* Header and navigation */
+header {
+    background-color: #17324d;
+    color: white;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    margin: 0;
+}
+
+header h2 span {
+    color: #42d6c2;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+nav a:hover {
+    color: #42d6c2;
+}
+
+/* Home section */
+.hero {
+    background-color: #e2f5f3;
+    padding: 55px 8%;
+}
+
+.welcome {
+    color: #087f78;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.hero h1 {
+    color: #17324d;
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.hero h3 {
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+.hero p {
+    max-width: 650px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #087f78;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #065f59;
+}
+
+/* Common section styling */
+.section {
+    padding: 40px 8%;
+}
+
+.section h2 {
+    color: #17324d;
+    margin-top: 0;
+}
+
+.section p {
+    max-width: 850px;
+}
+
+.details {
+    background-color: white;
+    border-left: 4px solid #42bfb0;
+    padding: 12px 20px;
+    margin-top: 20px;
+}
+
+/* Skills table */
+.light {
+    background-color: #eaf0f6;
+}
+
+table {
+    width: 100%;
+    max-width: 850px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #17324d;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f7fb;
+}
+
+/* Project cards */
+.project-list {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project {
+    background-color: white;
+    border: 1px solid #d6e0e9;
+    border-radius: 7px;
+    padding: 18px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.project h3 {
+    color: #087f78;
+    margin-top: 0;
+}
+
+.project span {
+    display: inline-block;
+    color: #17324d;
+    background-color: #e2f5f3;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+/* Contact section and footer */
+#contact a {
+    color: #087f78;
+}
+
+footer {
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Simple layout adjustments for phones */
+@media (max-width: 650px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 12px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
